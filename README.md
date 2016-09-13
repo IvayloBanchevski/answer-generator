@@ -1,2 +1,2 @@
-# answer-generator
-A very simple "yes"/"no" generator.
+# YES/NO Generator
+A very (very) simple random answer (yes/no) generator.
