@@ -1,0 +1,47 @@
+
+body{
+	background-color: #191919;
+	font-family: "Verdana", sans-serif;
+	color: #DFE2DB;
+	/* Disable selection */
+	-webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Chrome/Safari/Opera */
+  -khtml-user-select: none; /* Konqueror */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE/Edge */
+  user-select: none;
+}
+ 
+.big-title{
+	font-size: 7rem;
+}
+ 
+.med-title{
+	font-size: 5rem;
+}
+ 
+#answer{
+	color: #191919;
+	background-color: #FFF056;
+	font-size: 5rem;
+	padding: .1em;
+	border-radius: 2px;
+	text-shadow: 1px 1px 1px;
+}
+ 
+#mybutton{
+	font-size: 3em;
+	width: 300px;
+	height: 80px;
+	padding: .2em;
+	background-color: transparent;
+	cursor: pointer;
+	border: 1px solid #DFE2DB;
+	border-radius: 35px;
+}
+ 
+#mybutton:hover{
+	color: #191919;
+	background-color: #DFE2DB;
+	transition: 0.5s;
+}
