@@ -1,3 +1,7 @@
+* {
+  margin: 0;
+  padding: 0;
+}
 
 body{
 	background-color: #191919;
@@ -11,15 +15,28 @@ body{
   -ms-user-select: none; /* IE/Edge */
   user-select: none;
 }
- 
-.big-title{
-	font-size: 7rem;
+
+.container {
+	position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -15%; /* Changes with height. */
+  margin-left: -36%; /* Your width divided by 2. */
 }
- 
-.med-title{
-	font-size: 5rem;
+
+.header-title {
+	font-size: 3.5em;
+	color: #FFF056;
 }
- 
+
+.answer-wrapper {
+	margin: 0 auto;
+	width: 150px;
+	height: 100px;
+	text-align: center;
+	margin-top: 50px;
+} 
+
 #answer{
 	color: #191919;
 	background-color: #FFF056;
@@ -27,21 +44,34 @@ body{
 	padding: .1em;
 	border-radius: 2px;
 	text-shadow: 1px 1px 1px;
+	text-transform: uppercase;
 }
  
-#mybutton{
+.button-wrapper {
+	text-align: center;
+}
+.main-button {
+	color: #FFF056;
 	font-size: 3em;
-	width: 300px;
-	height: 80px;
-	padding: .2em;
+	padding: 15px;
 	background-color: transparent;
-	cursor: pointer;
-	border: 1px solid #DFE2DB;
-	border-radius: 35px;
+	border: 5px solid #DFE2DB;
+	border-radius: 20px;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: 600;
 }
  
-#mybutton:hover{
+.main-button:hover{
 	color: #191919;
 	background-color: #DFE2DB;
 	transition: 0.5s;
 }
+
+/*@media (min-width: 300px) {
+	.container {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+	}
+}*/

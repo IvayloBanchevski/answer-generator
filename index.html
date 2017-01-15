@@ -1,30 +1,20 @@
 <!DOCTYPE html>
 	<head>
 		<meta charset="UTF-8">
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 		<title>Yes or No generator</title>
 		<link rel="stylesheet" type="text/css" href="style.css">
 		<script type="text/javascript" src="randomizer.js"></script>
 	</head>
 	<body>
-		<div class="container-fluid">
-			<span class="row"></span>
-			<div class="row">
-				<div class="col-xs-12 col-sm-12">
-					<h1 class="big-title text-center">Random "Yes" or "No" generator</h1>
-				</div>
+		<div class="container">
+			<header>
+				<h1 class="header-title">Random "Yes" or "No" generator.</h1>
+			</header>
+			<div class="answer-wrapper">
+				<div id="answer"></div>
 			</div>
-			<br><br>
-			<span class="row"></span>
-			<div class="row">
-				<div class="col-xs-12 col-sm-12 text-center">
-					<p class="med-title">Your answer is:</p>
-					<span id="answer"></span>
-				</div>
-			</div>
-			<br><br>
-			<div class="row text-center">
-				<label id="mybutton" onclick="randomAnswr()" class="noselect text-center">Generate</label>
+			<div class="button-wrapper">
+				<a href="" class="main-button">Randomize</a>
 			</div>
 		</div>
 	</body>
