@@ -4,7 +4,6 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 		<title>Yes or No generator</title>
 		<link rel="stylesheet" type="text/css" href="style.css">
-		<script type="text/javascript" src="randomizer.js"></script>
 	</head>
 	<body>
 		<div class="container-fluid">
@@ -24,8 +23,17 @@
 			</div>
 			<br><br>
 			<div class="row text-center">
-				<label id="mybutton" onclick="randomAnswr()" class="noselect text-center">Generate</label>
+				<label id="generateBtn" class="noselect text-center">Generate</label>
 			</div>
 		</div>
+		<script>
+			document.querySelector('#generateBtn').addEventListener('click', function(evt) {
+				var possibleAnswers = ['YES!', 'NO!'];
+				document.querySelector('#answer').innerHTML = 'generating...';
+				setTimeout(function() {
+					document.querySelector('#answer').innerHTML = possibleAnswers[Math.floor(Math.random() * possibleAnswers.length)];
+				}, 600);	
+			});
+		</script>
 	</body>
 </html>
